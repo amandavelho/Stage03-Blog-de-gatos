@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+header, input, body {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: clamp(1.6rem, 1vw + 1rem, 2rem);
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+.container {
+    width: min(43rem, 100%);
+    margin: 0 auto;
+
+}
+
+main {
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2.55rem;
+
+    background-color: #387E96;
+
+    padding: 1.2rem 2.8rem;
+}
+
+header form {
+    flex: 1;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: .8rem;
+    
+    background: #F4FCFF;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 1.2rem;
+    
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: .6rem;
+    border: 0;
+
+    font-size: clamp(1.6rem, 1vw + 1rem, 2rem);;
+}
+
+.input-wrapper input::placeholder {
+    color: #FFFFFF;
+}
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 2vw + 1rem, 3.2rem);;
+    font-weight: 700;
+
+}
+
+div .title, p, .gallery {
+    padding: 0 2.2rem;
+}
+
+.artigos {
+    padding: 0rem 2.2rem;
+}
+ 
+.icon {
+    background-color: #065E7C;
+    padding: 1.2rem;
+
+    border-radius: 50%;
+    border: 0;
+
+    margin: 1rem 1.2rem 3.1rem 0;
+}
+
+.container p {
+    line-height: 160%;
+    font-weight: 600;
+
+    margin-bottom: 3.4rem;
+}
+
+.item {
+    width: 38.4rem;
+    height: 8.4rem;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+
+    align-items: center;
+}
+
+.item img {
+    object-fit: cover;
+    width: 15.1rem;
+    height: 8.4rem;
+}
+
+.cat {
+    margin-bottom: 3.1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.gallery {
+    margin-top: 3.2rem;
+}
+
+footer p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.6rem;
+    color: #FFFFFF;
+    background-color: #387E96;
+}
+
+@media (min-width: 431px) {
+    
+    header {
+        padding: 1.6rem 11.2rem;
+    }
+
+    header form {
+        flex: 1; 
+    } 
+
+    main {
+        display: flex;
+        margin-top: 4.4rem;
+                
+        gap: 3.4rem;
+
+        padding: 0 11.2rem 0 10.9rem;    
+    }
+    
+    .title  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+      
+    .container {
+        flex: 1;
+        width: 100%;
+    }
+    
+    .cat {
+        width: 80rem;
+        height: 40.5rem;
+        padding: 0 2.2rem;
+    }
+
+    .button {
+       align-items: center;
+    }
+
+    
+   
+}
+
+
+
+
+
+
